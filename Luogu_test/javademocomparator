@@ -1,0 +1,23 @@
+import java.util.Comparator;
+
+// Define a class
+class MyClass {
+    private int value;
+
+    public MyClass(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+}
+
+// Define a comparator
+class MyComparator implements Comparator<MyClass> {
+    @Override
+    public int compare(MyClass obj1, MyClass obj2) {
+        return Integer.compare(obj1.getValue(), obj2.getValue());
+        // 返回值为-1，0，1，分别表示小于，等于，大于
+    }
+}
