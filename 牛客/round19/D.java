@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
 // helloworld
+// youare welcome
 public class D {
     static int[] dx = { 0, 0, -1, 1, -1, 1, -1, 1 };
     static int[] dy = { 1, -1, 0, 0, 1, 1, -1, -1 };
