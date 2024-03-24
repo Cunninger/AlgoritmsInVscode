@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
-
+// helloworld
 public class D {
     static int[] dx = { 0, 0, -1, 1, -1, 1, -1, 1 };
     static int[] dy = { 1, -1, 0, 0, 1, 1, -1, -1 };
@@ -22,6 +22,7 @@ public class D {
             g[i] = in.next().toCharArray();
 
         }
+        // hello
         dfs(0, 0);
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
