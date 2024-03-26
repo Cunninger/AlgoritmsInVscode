@@ -1,74 +1,41 @@
-package BlueBridge;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.util.HashMap;
-import java.util.StringTokenizer;
 
-public class average{
-    public static void main(String[] args){
-         QuickInput in = new  QuickInput();
-        PrintWriter out = new PrintWriter(System.out);
+import java.util.*;
+
+public class average {
+    static class Node {
+        int num;
+        int value;
+
+        public Node(int num, int value) {
+            this.num = num;
+            this.value = value;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        int stard = n/10;
-        HashMap<Integer,Integer> map = new HashMap<>();
-        int []arr = new int[n];
-        int []value = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = in.nextInt();
-            value[i]= in.nextInt();
-            map.put(arr[i], map.getOrDefault(arr[i], 0)+1);
+        int standard = n/10;
+        int []cnt = new int[10];
+        Node[]nodes = new Node[n];
+        for (int i = 0; i < nodes.length; i++) {
+            int a = in.nextInt();
+            int b = in.nextInt();
+            cnt[a]++;
+            nodes[i] = new Node(a, b);
+
         }
-        int cnt = 0;
-        for (int i = 0; i < n; i++) {
-            if (map.get(arr[i])>stard){
-                cnt+=value[i];
+        int sum = 0;
+        Arrays.sort(nodes,(o1,o2)->(o1.value-o2.value));
+        for (int i = 0; i < nodes.length; i++) {
+            if (cnt[nodes[i].num]>standard){
+                sum+=nodes[i].value;
+
+               cnt[nodes[i].num]--;
             }
         }
-        System.out.println(cnt);
-        
-        out.close();
+
+        System.out.println(sum);
     }
+
 }
-
-
-class  QuickInput
-{
-    BufferedReader buf;
-    StringTokenizer tok;
-     QuickInput(){
-        buf = new BufferedReader(new InputStreamReader(System.in));
-    }
-    boolean hasNext(){
-        while(tok == null || !tok.hasMoreElements()){
-            try{
-                tok = new StringTokenizer(buf.readLine());
-            }catch(Exception e){
-                return false;
-            }
-        }
-        return true;
-    }
-    String next(){
-        if(hasNext()) return tok.nextToken();
-        return null;
-    }
-    int nextInt(){
-        return Integer.parseInt(next());
-    }
-    long nextLong(){
-        return Long.parseLong(next());
-    }
-    double nextDouble(){
-        return Double.parseDouble(next());
-    }
-    BigInteger nextBigInteger(){
-        return new BigInteger(next());
-    }
-    BigDecimal nextBigDecimal(){
-        return new BigDecimal(next());
-    }
-}
-
