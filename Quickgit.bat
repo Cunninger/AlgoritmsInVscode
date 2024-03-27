@@ -7,7 +7,7 @@ REM 添加所有改动到暂存区
 git add .
 
 REM 提交改动
-git commit -m "Round33 C "
+git commit -m "BleuBridge simplewrite "
 
 REM 推送改动到远程仓库
 git push origin master
