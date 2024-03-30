@@ -27,8 +27,10 @@ public class reviewTwoDemSum {
         }
         int ma = Integer.MIN_VALUE;
         for (int x1 = 1; x1 < arr.length; x1++) { // x1
-            for (int y1 = 1; y1 < arr.length; y1++) { // x2
-                for (int x2 = x1; x2 < arr.length; x2++) { // y1
+
+            for (int x2 = x1; x2 < arr.length; x2++) { // y1
+
+                for (int y1 = 1; y1 < arr.length; y1++) { // x2
                     for (int y2 = y1; y2 < arr.length; y2++) { // y2
 
                         ma = Math.max(ma, getPart(x1, y1, x2, y2));
@@ -41,10 +43,11 @@ public class reviewTwoDemSum {
     }
 
     public static int getPart(int x1, int y1, int x2, int y2) {
+        // 输入的x1,y1,x2,y2是否需要偏移
         // a++;
         // b++;
         // c++;
         // d++;
         return ssm[x2][y2] - ssm[x2][y1 - 1] - ssm[x1 - 1][y2] + ssm[x1 - 1][y1 - 1];
-    }   
+    }
 }
