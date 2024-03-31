@@ -15,8 +15,8 @@ public class pinCar {
         // trip[0] = new int[] { 2, 1, 5 };// num f t
         // trip[1] = new int[] { 3, 3, 7 };
         trip[0] = new int[] { 2, 1, 5 };// num f t
-        trip[1] = new int[] { 3, 3, 7 };
-        int capacity = 5;
+        trip[1] = new int[] { 3, 5, 7 };
+        int capacity = 3;
         int[] arr = new int[1002];
         int[] sum = new int[1002];
         int mi = Integer.MAX_VALUE;
