@@ -11,18 +11,11 @@ public class C{
         PrintWriter out = new PrintWriter(System.out);
         char[]str = in.next().toCharArray();
         int cnt = 0;
-        for (int i = 0; i < str.length && i+1<str.length; i+=2) {
-            if(str[i]-'0'==1 && str[i+1]-'0'==1){
+
+        for (int i = 0; i < str.length-1 ;i++) {
+            if (str[i]==str[i+1] ||str[i]=='?'||str[i+1]=='?'){
                 cnt++;
-            }
-            else if (str[i]-'0'==0 && str[i+1]-'0'==0){
-                cnt++;
-            }
-            else if (str[i]=='?'){
-                cnt++;
-            }
-            else if (str[i+1]=='?'){
-                cnt++;
+                i++;      
             }
         }
         out.println(cnt);
