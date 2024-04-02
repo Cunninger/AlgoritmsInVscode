@@ -7,7 +7,7 @@ REM 添加所有改动到暂存区
 git add .
 
 REM 提交改动
-git commit -m "blueBridge workTime finsh "
+git commit -m "blueBridge numPosSort finsh "
 
 REM 推送改动到远程仓库
 git push origin master
