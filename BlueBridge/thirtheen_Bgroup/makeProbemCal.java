@@ -1,4 +1,4 @@
-package BlueBridge.thirtheen_Bgroup;
+package thirtheen_Bgroup;
 
 import java.util.Scanner;
 
@@ -10,9 +10,11 @@ public class makeProbemCal {
         int b = in.nextInt();
         int n = in.nextInt();
         int []week = new int[]{a,a,a,a,a,b,b};
-        for (int i = 0; i < week.length; i++) {
-            
+        int k = 0;
+        while (n>0){
+            n-=week[(k++)%7];
         }
+        System.out.println(k);
 
     }
 }
