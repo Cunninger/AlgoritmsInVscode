@@ -19,6 +19,7 @@ public class makeProbemCal {
             else rest-=a;
             x++;
             day++;
+            // finsh
         }
 
         System.out.println(day);
