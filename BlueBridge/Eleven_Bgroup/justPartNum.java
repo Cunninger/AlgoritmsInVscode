@@ -12,7 +12,7 @@ public class justPartNum {
         System.out.println(dfs(cnt));
 
         int k = 1;
-        // 406+=4*k+
+        // hello
 
     }
 
