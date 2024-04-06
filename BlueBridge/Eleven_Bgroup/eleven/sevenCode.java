@@ -45,6 +45,7 @@ public class sevenCode {
 
                 }
             }
+            // heLlo
             if (!flag) {
                 cnt++;
             }
