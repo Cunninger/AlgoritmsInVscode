@@ -45,7 +45,7 @@ public class sevenCode {
 
                 }
             }
-            // heLlo
+            // heLlo world
             if (!flag) {
                 cnt++;
             }
