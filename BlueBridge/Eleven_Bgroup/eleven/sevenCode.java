@@ -43,6 +43,7 @@ public class sevenCode {
                 if (find(path[i]) != find(path[i + 1])) {
                     flag = true;
                     break;
+                    // he
                 }
             }
 
