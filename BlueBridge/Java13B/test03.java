@@ -28,19 +28,22 @@ public class test03 {
         int k = 1;
         res[0] = maIndex;
         for (int i = 0; i < map.length; i++) {
-            if (map[i]==ma && i!=maIndex)
-            res[k++] = i;
+            if (map[i]==ma){
+                System.out.print((char)(i+65));
+            }
         }
-        Arrays.sort(res);
-        Set<Character>set = new TreeSet<>();
-        for (int i = 0; i < res.length; i++) {
-            char u =(char) ('A'+res[i]);
-            set.add(u);
-            // System.out.print(u);
-        }
-        for(char c:set){
-            System.out.print(c);
-        }
+        // Arrays.sort(res);
+        // Set<Character>set = new TreeSet<>();
+        // for (int i = 0; i < res.length; i++) {
+        //     char u =(char) ('A'+res[i]);
+        //     set.add(u);
+        //     // System.out.print(u);
+        // }
+        // for(char c:set){
+        //     System.out.print(c);
+        // }
+
+
 
     }
 }
