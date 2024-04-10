@@ -27,7 +27,7 @@ public class BigdecimalTest {
             BigDecimal yxl = new BigDecimal(String.valueOf(yx)).divide(new BigDecimal(String.valueOf(n)),2,BigDecimal.ROUND_HALF_UP);
             int newyxl1 = yxl.multiply(new BigDecimal("100")).intValue();
             System.out.print(newyxl1 + "%");
-
+            // hello
     }
 
     }

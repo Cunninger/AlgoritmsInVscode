@@ -1,5 +1,5 @@
 @echo off
-
+chcp 65001
 REM 切换到你的项目目录
 cd D:\VScode_20230829\algoritmsInVscode
 
