@@ -29,6 +29,12 @@ public class B {
         Arrays.sort(res, (o1, o2) -> {
             return (o1 + o2).compareTo(o2 + o1);
         });
+
+
+
+
+
+    // 排列数字 
         for (int i = 0; i < res.length; i++) {
             System.out.println(res[i]);
         }

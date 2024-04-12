@@ -31,28 +31,30 @@ public class search2022 {
 
 			}
 		}
-		char[] sp = new char[300];
-		int t = 0;
-		for (int i = 0; i < mat.length; i++) {
-			for (int j = 0; j < mat[0].length; j++) {
-				if (i == j) {
-					sp[t++] = mat[i][j];
-				}
-			}
-		}
+		// char[] sp = new char[300];
+		// int t = 0;
+		// for (int i = 0; i < mat.length; i++) {
+		// 	for (int j = 0; j < mat[0].length; j++) {
+		// 		if (i == j) {
+		// 			sp[t++] = mat[i][j];
+		// 		}
+		// 	}
+		// }
 		
-		for (int i = 0; i < sp.length - 3; i++) {
-			if (sp[i] == '2' && sp[i + 1] == '0' && sp[i + 2] == '2' && sp[i + 3] == '0') {
-				cnt++;
-			}
-		}
+		// for (int i = 0; i < sp.length - 3; i++) {
+		// 	if (sp[i] == '2' && sp[i + 1] == '0' && sp[i + 2] == '2' && sp[i + 3] == '0') {
+		// 		cnt++;
+		// 	}
+		// }
+
+		
 		System.out.println(cnt);
 
 	}
 
 	public static char[][] getMat() throws Exception {
 		char[][] mat = new char[300][300];
-		File file = new File("D:\\A_Eclipse\\workspace\\websiteOJ\\BlueBridge1\\src\\Java11B\\data.txt");
+		File file = new File("D:/VScode_20230829/algoritmsInVscode/BlueBridge/Java11B/data.txt");
 		Scanner in = new Scanner(file);
 		int k = 0;
 		while (in.hasNextLine()) {
