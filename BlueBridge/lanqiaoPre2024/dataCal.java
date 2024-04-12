@@ -21,10 +21,12 @@ public class dataCal {
 
                                 for (int l2 = l + 1; l2 < arr.length; l2++) {
                                     for (int m = l2 + 1; m < arr.length; m++) {
+
                                         String s = i + "_" + j + "_" + j2 + "_" + k + "_" + k2 + "_" + l + "_" + l2
                                                 + "_" + m;
 
                                         if (!set.contains(s)) {
+                                            // 1 00 00 00 00 00 00 00 00
                                             set.add(s);
                                             if (arr[i] == 2 && arr[j] == 0 && arr[j2] == 2 && arr[k] == 3) {
                                                 // 20230
