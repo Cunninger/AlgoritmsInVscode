@@ -19,16 +19,7 @@ public class pa {
         for (int i = 1; i <= n; i++)
             for (int j = 1; j <= m; j++)
                 s[i][j] = s[i][j - 1] + s[i - 1][j] + arr[i - 1][j - 1] - s[i - 1][j - 1];
-        // for (int i = 1;i<=n;i++){
-        //     for (int j = 1;j<=m;j++){
-        //         System.out.print(s[i][j]+"      ");
-        //     }
-        //     System.out.println();
-        // }
-// 3 4 10
-// 1 2 3 4
-// 5 6 7 8
-// 9 10 11 12
+
         for (int a = 1; a <= n; a++)
             for (int b = 1  ; b <= m; b++)
                 for (int c = a; c <= n; c++)
